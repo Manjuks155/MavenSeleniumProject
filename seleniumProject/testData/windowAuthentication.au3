@@ -1,0 +1,5 @@
+WinWaitActive("Sign in")
+Send("validUserName")
+Send("{TAB}")
+Send("validPassword")
+Send("{ENTER}")

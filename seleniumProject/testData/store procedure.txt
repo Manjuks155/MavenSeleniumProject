@@ -1,0 +1,38 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `p1`(_tblname varchar(30), _fromdatetime datetime, _todatetime datetime)
+BEGIN
+declare fdt datetime;
+     declare tdt datetime;
+  
+
+     set fdt=_fromdatetime;
+     set tdt=_todatetime;
+
+     drop table if exists temp2;
+     create temporary table temp2
+     (select CreatedOn as 'date',
+     StartDate as 'startdate1',
+     StartTime as 'starttime1',
+     callingnum as 'callingnum',
+     dialednum as 'dialednum',
+     duration as 'duration',
+     direction as 'direction'
+
+     from vncdrdb.ipocdr
+     where direction in('O','I') and concat(startdate," ",starttime) between fdt and tdt and duration<>'00:00:00'
+     );
+     
+     drop table if exists temp3;
+     create temporary table temp3
+     (select Ext , Agent as 'agentname' from vncdrdb.agent_details
+     );
+     
+     drop table if exists temp;
+     create temporary table temp
+     (select temp2.date, temp2.startdate1, temp2.starttime1, temp2.callingnum, temp2.dialednum, temp2.duration, temp2.direction, temp3.agentname from temp2 left outer join temp3 on temp2.callingnum=temp3.Ext
+     );
+     
+     SET @my_qry=Concat('Create Table ',_tblname,'_t_1 as select * from temp');
+  Prepare stmt from @my_qry;
+  Execute stmt;
+  Deallocate prepare stmt;
+END
