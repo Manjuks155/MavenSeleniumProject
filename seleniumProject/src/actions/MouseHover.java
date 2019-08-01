@@ -12,7 +12,7 @@ public class MouseHover {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "jars/ChromeJar/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.amazon.in/");
+		driver.get("https://www.amazon.in/  ");
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
