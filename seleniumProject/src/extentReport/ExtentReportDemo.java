@@ -43,6 +43,7 @@ public class ExtentReportDemo {
 		test.info("test completed");
 
 		reports.flush();
+		driver.close();
 
 	}
 

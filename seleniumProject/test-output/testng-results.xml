@@ -1,17 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15247" started-at="2019-06-02T09:30:39Z" finished-at="2019-06-02T09:30:54Z">
+  <suite name="Default suite" duration-ms="661" started-at="2019-08-03T10:07:13Z" finished-at="2019-08-03T10:07:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15247" started-at="2019-06-02T09:30:39Z" finished-at="2019-06-02T09:30:54Z">
-      <class name="extentReport.ExtentReportDemo">
-        <test-method status="PASS" signature="extentReportMethod()[pri:0, instance:extentReport.ExtentReportDemo@77cd7a0]" name="extentReportMethod" duration-ms="15217" started-at="2019-06-02T09:30:39Z" finished-at="2019-06-02T09:30:54Z">
+    <test name="Default test" duration-ms="661" started-at="2019-08-03T10:07:13Z" finished-at="2019-08-03T10:07:14Z">
+      <class name="dataDrivenFramework.Demo2">
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="10" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extentReportMethod -->
-      </class> <!-- extentReport.ExtentReportDemo -->
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="10" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="0" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="0" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="0" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="10" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="0" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="createTest(java.lang.String, java.lang.String)[pri:0, instance:dataDrivenFramework.Demo2@57baeedf]" name="createTest" duration-ms="0" started-at="2019-08-03T10:07:14Z" data-provider="provider" finished-at="2019-08-03T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userName7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passWord7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+      </class> <!-- dataDrivenFramework.Demo2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

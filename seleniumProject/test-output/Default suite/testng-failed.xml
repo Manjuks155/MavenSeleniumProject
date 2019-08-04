@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extentReport.ExtentReportWithScreenShot">
+      <class name="dataDrivenFramework.Demo2">
         <methods>
-          <include name="captureStatus"/>
-          <include name="shutDown"/>
-          <include name="start"/>
-          <include name="m2"/>
-          <include name="m1"/>
-          <include name="setUp"/>
-          <include name="sampleTestCase"/>
+          <include name="createTest"/>
         </methods>
-      </class> <!-- extentReport.ExtentReportWithScreenShot -->
+      </class> <!-- dataDrivenFramework.Demo2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

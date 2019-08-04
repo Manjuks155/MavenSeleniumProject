@@ -16,6 +16,7 @@ public class Demo1 {
 	public Object[][] provideData() {
 		Object[][] data = new Object[3][2];
 		
+		System.out.println(data.length);
 		data[0][0] = "Demo1";
 		data[0][1] = "pass1";
 		
@@ -28,3 +29,5 @@ public class Demo1 {
 		return data;
 	}
 }
+
+
